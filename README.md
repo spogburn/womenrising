@@ -39,12 +39,12 @@ to the terms.
 
 Under Authentication, you will find your client ID and Secret (keep these
 secret!!). You will also see Default Applications persissionsi under that
-check off r\_basicprofile r\_emailaddress and w\_messages (you will need those
-for the profile).
+check off `r_basicprofile` and `r_emailaddress` (you will need those for
+the profile).
 
 Next under OAuth 2.0 add in the redirect URL for
-http://localhost:3000/users/auth/linkedin/callback and
-https://localhost:3000/users/auth/linkedin/callback (this will allow linkedin
+`http://localhost:3000/users/auth/linkedin/callback` and
+`https://localhost:3000/users/auth/linkedin/callback` (this will allow linkedin
 to redirect back to your localhost also if your localhost is something other
 than 3000 you just need to change the number to the correct one).
 
@@ -167,3 +167,47 @@ can find more at [contributor-covenant](http://contributor-covenant.org/).
 # open a heroku rails shell
 heorku run rake womenrising:peer_group_monthly_match c -a womenrising
 ```
+
+
+#### staging environment
+1. link the apps in heroku
+2. make sure we have the same addons for both envs
+3. make sure we have the right env variables for both envs
+4. provide docs for testing that peer group matches work
+
+
+#### location changes
+create locations model
+expose model to active admin ui
+add location reference to user model
+add location drop down to the user edit form
+add location drop down to the user sign up process
+add page with declared locations
+allow your peer group to be represented through the website? (add this but keep it hidden)
+
+
+#### location follow items
+(not sure about how to do this) tell users to declare location
+- email blast
+
+
+#### google analytics
+1. make sure the google analytics code is in the app and deployed
+2. test that production emits events from heroku to GA dashboard. it should work.
+3. setup the following goals
+3a. sign up for user account
+3b. sign up for mentoring
+3c. sign up to get mentored
+
+
+#### add background job
+1. add sidekiq gem as background worker
+2. config files
+2a. update the application.rb to work with rails job scheduler railtie thingee
+2b. add sidekiq.rb file with heroku appropriate connections (copy and paste from mm project)
+2c. add sidekiq.yml file with heroku appropriate params (cp from mm proejct)
+3. mount the sidekiq ui in the routes.rb file
+4. add redis queue on the heorku apps
+5. add redis to the travisci build setup
+5. turn off jobs in the testing environment
+
