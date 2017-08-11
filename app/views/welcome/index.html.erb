@@ -1,41 +1,39 @@
-<div class="container-fluid welcomePageContainer">
-  <div class="hero">
-    <!-- <img src="images/splash_filtered.jpg" alt="This is an image of two women laughing with each other at an outdoor cafe."> -->
-    <p>
-      Studies show that mentors and friends determine your career path. Find that support group here:
-    </p>
-    <div id="joinNowCTA">
-      <%= link_to "Join Now", default_omniauth_authorize_path %>
-    </div>
+<div class="jumbotron">
+  <!-- <img src="images/splash_filtered.jpg" alt="This is an image of two women laughing with each other at an outdoor cafe."> -->
+  <div class="container text-center">
+    <h1>
+    Studies show that mentors and friends determine your career path. Find that support group here:
+    </h1>
+      <%= link_to "Join Now", default_omniauth_authorize_path, class: "btn btn-lg btn-cta" %>
   </div>
 
-  <div class="unit">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class='sectionHead light'>
-          How Joining Can Help
-        </h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <div class="thumbnail dark">
-          <%= image_tag "icons/find_peers.png", alt: "An image of three clipart heads." %>
-          <div class="caption">
-            <h3>Find Peers</h3>
-            <p>
-              Talk to other women who are as dedicated to their careers as you are. We employ our proven algorithmic
-              process to create "mini-meetup" groups of three that are selected by peer groups, industry, and city.
-            </p>
-          </div>
+</div>
+<div class="container-fluid welcome-page">
+<div class="row">
+  <div class="col-md-12">
+    <section class="joining">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2 class="">
+            How Joining Can Help
+          </h2>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="thumbnail dark">
-          <%= image_tag "icons/find_mentorship.png", alt: "An image of a clipart head in a magnifying glass." %>
-          <div class="caption">
-            <h3>Find Mentorship</h3>
+      <div class="row text-center">
+        <div class="col-md-4 col-sm-12">
+          <div class="thumbnail dark">
+            <%= image_tag "icons/find_peers.png", alt: "An image of three clipart heads." %>
+              <h3 class="">Find Peers</h3>
+              <p>
+                Talk to other women who are as dedicated to their careers as you are. We employ our proven algorithmic
+                process to create "mini-meetup" groups of three that are selected by peer groups, industry, and city.
+              </p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="thumbnail dark">
+            <%= image_tag "icons/find_mentorship.png", alt: "An image of a clipart head in a magnifying glass." %>
+            <h3 class="">Find Mentorship</h3>
             <p>
               Connect to intelligent women via Skype to either seek advice and insight on your personal career path, or
               role playing feedback on other work related situations. Our mentorship program allows you to meet with as
@@ -43,28 +41,27 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="thumbnail dark">
-          <%= image_tag "icons/mentor_others.png", alt: "An image of two clipart heads." %>
-          <div class="caption">
-            <h3>Mentor Others</h3>
+        <div class="col-md-4 col-sm-12">
+          <div class="thumbnail dark">
+            <%= image_tag "icons/mentor_others.png", alt: "An image of two clipart heads." %>
+            <h3 class="">Mentor Others</h3>
             <p>
               You don't have to be a top executive at a Fortune 100 company, all you need is the experience to provide
               your mentee with beneficial guidance. Connect with other women interested in your position, and help other
               women attain the same career success as you. This program is not a full time committment; you are able to
               chat with your mentee when it is convenient for you.
             </p>
-          </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
+</div>
 
-  <div class="unit light userProfiles" id="featured">
+<div class="row profiles text-center" id="featured">
+  <div class="col-md-12">
     <div class="row">
       <div class="col-md-12">
-        <h2 class='sectionHead dark'>
+        <h2 class="featured">
           Featured Members and Mentors
         </h2>
       </div>
@@ -73,7 +70,7 @@
     <div class="row">
       <div class="col-md-4 col-sm-6">
         <div class="thumbnail">
-          <%= image_tag "kathleen_warner.jpg", alt: "An image of a woman." %>
+          <%= image_tag "kathleen_warner.jpg", alt: "An image of a woman.", class: "img-responsive" %>
           <div class="caption">
             <h3>Kathleen Warner</h3>
             <p class='jobTitle'>
@@ -87,7 +84,7 @@
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="thumbnail">
-          <%= image_tag "1ec3f14-2.jpg", alt: "An image of a woman's smiling face." %>
+          <%= image_tag "1ec3f14-2.jpg", alt: "An image of a woman's smiling face.", class: "img-responsive" %>
           <div class="caption">
             <h3>Monica Wheat</h3>
             <p class='jobTitle'>
@@ -101,7 +98,7 @@
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="thumbnail">
-          <%= image_tag "05de396-2.jpg", alt: "An image of a woman's smiling face." %>
+          <%= image_tag "05de396-2.jpg", alt: "An image of a woman's smiling face.", class: "img-responsive" %>
           <div class="caption">
             <h3>Elyse Guilfoyle</h3>
             <p class='jobTitle'>
@@ -115,7 +112,7 @@
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="thumbnail">
-          <%= image_tag "056eef0.jpg", alt: "An image of a woman's smiling face." %>
+          <%= image_tag "056eef0.jpg", alt: "An image of a woman's smiling face." , class: "img-responsive"%>
           <div class="caption">
             <h3>Emily Mahood Bowman</h3>
             <p class='jobTitle'>
@@ -129,7 +126,7 @@
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="thumbnail">
-          <%= image_tag "3005686.jpg", alt: "An image of a woman's smiling face." %>
+          <%= image_tag "3005686.jpg", alt: "An image of a woman's smiling face.", class: "img-responsive" %>
           <div class="caption">
             <h3>Anna Schroen</h3>
             <p class='jobTitle'>
@@ -143,7 +140,7 @@
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="thumbnail">
-          <%= image_tag "1d08518.jpg", alt: "An image of a woman's smiling face." %>
+          <%= image_tag "1d08518.jpg", alt: "An image of a woman's smiling face.", class: "img-responsive" %>
           <div class="caption">
             <h3>AJ Williams</h3>
             <p class='jobTitle'>
@@ -157,11 +154,15 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="unit dark howItWorks" id="howitworks">
+
+
+
+  <div class="row how-it-works text-center">
     <div class="row">
       <div class="col-md-12">
-        <h2 class='sectionHead light'>
+        <h2 class='light'>
           How It Works
         </h2>
       </div>
@@ -169,7 +170,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h3 class='sectionHead light'>Matching with Peers</h3>
+        <h3>Matching with Peers</h3>
       </div>
     </div>
 
@@ -177,7 +178,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail dark">
           <div class='thumbnailImg'>
-            <%= image_tag "icons/find.png" %>
+            <%= image_tag "icons/find.png", class: "img-responsive" %>
           </div>
           <div class="caption">
             <p>
@@ -190,7 +191,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail dark">
           <div class='thumbnailImg'>
-            <%= image_tag "icons/mail_teal.png" %>
+            <%= image_tag "icons/mail_teal.png", class: "img-responsive" %>
           </div>
           <div class="caption">
             <p>
@@ -203,7 +204,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail dark">
           <div class='thumbnailImg'>
-            <%= image_tag "icons/coffee.png" %>
+            <%= image_tag "icons/coffee.png" , class: "img-responsive"%>
           </div>
           <div class="caption">
             <p>
@@ -218,7 +219,7 @@
       <div class="col-md-3 col-sm-6">
         <div class="thumbnail dark">
           <div class='thumbnailImg'>
-            <%= image_tag "icons/connect.png" %>
+            <%= image_tag "icons/connect.png", class: "img-responsive"%>
           </div>
           <div class="caption">
             <p>
@@ -244,7 +245,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h3 class='sectionHead light'>Getting Advice</h3>
+        <h3 class='light'>Getting Advice</h3>
       </div>
     </div>
 
@@ -321,7 +322,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h3 class='sectionHead light'>Becoming a Mentor</h3>
+        <h3 class='light'>Becoming a Mentor</h3>
       </div>
     </div>
 
@@ -384,58 +385,65 @@
     </div>
   </div>
 
-  <div class="unit light partners" id="partners">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class='sectionHead dark'>
-          Our Awesome Partners
-        </h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <%= link_to image_tag("partners/briebug_solutions.png"), "http://briebugsoftwaresolutions.com/" %>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <%= link_to image_tag("partners/radial-logo.png"), "http://radialdevgroup.com/" %>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <%= link_to image_tag("partners/venture_for_america.png"), "http://ventureforamerica.org/" %>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <%= link_to image_tag("partners/girl_develop_it.png"), "https://www.girldevelopit.com/" %>
-      </div>
-    </div>
-  </div>
-
-  <div class="unit contact">
-    <div class="row">
-      <div class="col-md-12">
-        <h3 class='sectionHead light'>
-          Not ready to connect?
-        </h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <!-- Begin MailChimp Signup Form -->
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-        <div id="mc_embed_signup">
-          <form action="//WomenRising.us9.list-manage.com/subscribe/post?u=a253e99f8549e18d6502b3a59&amp;id=4e13f2ed86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <label for="mce-EMAIL">Sign up to receive our newsletter!</label>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a253e99f8549e18d6502b3a59_4e13f2ed86" tabindex="-1" value=""></div>
-              <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
-          </form>
+  <div class="row partners">
+    <div class="col-md-12">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2>
+            Our Awesome Partners
+          </h2>
         </div>
-
-      <!--End mc_embed_signup-->
+      </div>
+      <div class="row center-block">
+        <div class="col-md-3 col-sm-6">
+          <%= link_to image_tag("partners/briebug_solutions.png"), "http://briebugsoftwaresolutions.com/", class: "partner-image" %>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <%= link_to image_tag("partners/radial-logo.png"), "http://radialdevgroup.com/", class: "partner-image" %>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <%= link_to image_tag("partners/venture_for_america.png"), "http://ventureforamerica.org/", class: "partner-image" %>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <%= link_to image_tag("partners/girl_develop_it.png"), "https://www.girldevelopit.com/", class: "partner-image" %>
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="row unit contact text-center">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>
+            Not ready to connect?
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+          <div id="mc_embed_signup">
+            <form ="//WomenRising.us9.list-manage.com/subscribe/post?u=a253e99f8549e18d6502b3a59&amp;id=4e13f2ed86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="form-group" id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Sign up to receive our newsletter!</label>
+                <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a253e99f8549e18d6502b3a59_4e13f2ed86" tabindex="-1" value=""></div>
+                  <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+                    Subscribe
+                  </button>
+              </div>
+            </form>
+          </div>
+
+        <!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <div class="unit dark social">
     <div class="row">
