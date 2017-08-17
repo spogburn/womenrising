@@ -23,7 +23,7 @@ $brand-info: $darkGray;
 */
 
 body {
-	font-size: 1.5em;
+	font-size: 1.8em;
 	font-family: Helvetica Neue, Helvetica, San Serif;
 	background-color: white;
 }
@@ -115,74 +115,6 @@ body {
 }
 
 
-///// NAVIGATION /////
-.navbar-default {
-	background-color: #fff;
-	margin-bottom: 0;
-
-	#home {
-		color: $yellow
-	}
-}
-
-	.navbar-brand {
-		padding: 5px 5px;
-		img {
-			width: 150px;
-		}
-}
-
-ul.nav.navbar-nav.navbar-right {
-
-	a {
-		display: inline-block;
-		margin: 1.9rem 0;
-		padding: 1.8rem 1.2rem 1.7rem;
-		color: $headerNavColor;
-		font-weight: 500;
-
-		&.active {
-			color: $brand-primary;
-		}
-
-		&:hover {
-			text-decoration: none;
-		}
-	}
-
- 		&:last-child {
-	  .with-border,
-	  .avatar {
-	    border-left: 1px solid $headerNavColor;
-	  }
-	  .avatar {
-	    padding: 0.3rem 2rem;
-	    img {
-	      display: inline-block;
-	      height: 40px;
-	      width: 40px;
-	      margin-right: 0.2rem;
-	    }
-	    padding-right: 0;
-	    ~ a {
-	      color: $headerNavColor;
-	      font-weight: normal;
-	      padding-left: 1rem;
-	    }
-	  }
-	  a {
-	    color: $highLighted;
-	    padding: 1rem 2rem;
-	    font-weight: 600;
-	    display: inline;
-	  }
-	}
-}
-
-
-.navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: $yellow;
-}
 
 //// JUMBO TRON ////
 .jumbotron {
@@ -264,7 +196,6 @@ ul.nav.navbar-nav.navbar-right {
 	#twitterLink {
     height: 32px;
     width: 32px;
-    display: block;
 	}
 
 	#emailLink {
@@ -276,35 +207,10 @@ ul.nav.navbar-nav.navbar-right {
 			text-decoration: none;
 		}
 	}
-
-	.copyright {
-		text-align: center;
-	}
 }
 
 .unit.contact {
-
-	/* MailChimp Form Styling */
-	#mc_embed_signup {
-		clear: left;
-		font: Helvetica, Arial, sans-serif;
-		width: 100%;
-		color: $offWhite;
-
-		label {
-			font-size: 3rem;
-		}
-	}
-
-	.sectionHead {
-		text-align: center;
-	    line-height: 1;
-	    font-weight: 600;
-	    letter-spacing: normal;
-	    padding: 4rem 0;
-	}
-
-
+	padding: 1em;
 }
 
 .arrows {
@@ -363,34 +269,8 @@ ul.nav.navbar-nav.navbar-right {
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 850px) {
-	.logo {
-		img {
-			width: auto;
-			margin-top: 0;
-		}
-	}
-	.headerNav {
-		li {
-			a {
-				font-size: 1.6rem;
-			}
+@media (max-width: 850px) {
 
-			&:last-child {
-				a {
-					font-size: 2.4rem;
-				}
-			}
-		}
-
-	}
-
-	// .partners {
-	// 	img {
-	// 		max-width: 250px;
-	// 		width: 100%;
-	// 	}
-	// }
 }
 
 /* Medium devices (desktops, 992px and up) */
