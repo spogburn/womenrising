@@ -21,7 +21,7 @@
           <li><a href="https://thewomenrising.wordpress.com/" target="_blank">Blog</a></li>
           <li><a href="https://github.com/womenrising/womenrising" target="_blank">Contribute on GitHub</a>
           </li>
-          <li class="user-img">
+          <li>
             <% if current_user and user_signed_in? %>
 
               <a href="<%= user_path(current_user) %>" class="avatar">
@@ -44,4 +44,5 @@
     </div>
 
   </nav>
+
 

@@ -1,7 +1,6 @@
 ///// NAVIGATION /////
 .navbar-default {
   background-color: #fff;
-  margin-bottom: 0;
 
   #home {
     color: $yellow
@@ -20,10 +19,8 @@ ul.nav.navbar-nav.navbar-right {
 
   a {
     display: inline-block;
-    margin: 1.9rem 0;
-    padding: 1.5em;
+    padding: 1.5em 1em;
     color: $headerNavColor;
-    font-weight: 500;
 
     &.active {
       color: $brand-primary;
@@ -34,27 +31,18 @@ ul.nav.navbar-nav.navbar-right {
     }
   }
 
-  li {
-    &.user-img {
-      .avatar {
-        border-left: 1px solid $headerNavColor;
-      }
-      .avatar {
-        img {
-          display: inline-block;
-          max-height: 40px;
-          max-width: 40px;
-          margin-right: 0.2rem;
-        }
-      }
-      a {
-        padding: .8em;
-        color: $highLighted;
-        font-weight: 600;
-        display: inline-block;
-      }
+  .avatar {
+    border-left: 1px solid $headerNavColor;
+    padding: 1em;
+    color: $highLighted;
+    img {
+      display: inline-block;
+      max-height: 40px;
+      max-width: 40px;
+      margin-right: 0.2rem;
     }
   }
+
 }
 
 
@@ -75,34 +63,15 @@ ul.nav.navbar-nav.navbar-right {
   ul.nav.navbar-nav.navbar-right {
 
     a {
-      display: inline-block;
       margin: .7rem 0;
-      padding: .2em;
-      color: $headerNavColor;
-
-      &.active {
-        color: $brand-primary;
-      }
-
-      &:hover {
-        text-decoration: none;
-      }
+      padding: .2em 1em;
+    }
+    .avatar {
+      border-left: none;
+      color: $highLighted;
+      padding: .2em 1em;
     }
 
-    li {
-      &.user-img {
-        display:none;
-        .avatar {
-          border-left: none;
-        }
-        a {
-          padding: .3em;
-          color: $highLighted;
-          font-weight: 600;
-          display: inline-block;
-        }
-      }
-    }
   }
 }
 

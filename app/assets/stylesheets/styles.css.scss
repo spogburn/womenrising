@@ -316,54 +316,32 @@ body {
 	// 	}
 	// }
 }
+
 .welcome-page {
   background-color: #2D3E5D;
 }
 
 
-#container {
-	font-family: Helvetica Neue, Helvetica, Sans Serif;
-	color: #9B9B9B;
-	margin: 60px;
-}
-
-#container h1,#container h2 {
-	color:#1BC49B;
-	font-size: 23px;
-}
-
 a.btn:hover {
 	color: white;
-}
-
-.flush {
-	padding-left: 0px !important;
-	margin-left: 0px !important;
-}
-
-.large-frame {
-	margin: 40px 0px !important;
 }
 
 #mentor-button {
 	margin: 47px 0px;
 }
 
-.medium-frame {
-	margin: 20px 0px !important;
-}
 
-.tiny-frame {
-	margin: 3px 0px !important;
-}
+// .tiny-frame {
+// 	margin: 3px 0px !important;
+// }
 
-.no-frame {
-	margin: 0px !important;
-}
+// .no-frame {
+// 	margin: 0px !important;
+// }
 
-.side-frame {
-	padding: 0px 80px !important;
-}
+// .side-frame {
+// 	padding: 0px 80px !important;
+// }
 
 .divider {
 	border-bottom: 1px solid #AEAEAE;
@@ -402,6 +380,11 @@ a.btn:hover {
 }
 
 /*Profile Info Section*/
+
+
+.large-frame {
+	margin: 40px 0px !important;
+}
 
 .context h4 {
 	color: #2D3E5D;
