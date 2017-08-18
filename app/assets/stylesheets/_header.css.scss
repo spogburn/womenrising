@@ -61,7 +61,11 @@ ul.nav.navbar-nav.navbar-right {
   }
 
   ul.nav.navbar-nav.navbar-right {
-
+    li {
+      &.main-page {
+        display: none;
+      }
+    }
     a {
       margin: .7rem 0;
       padding: .2em 1em;
